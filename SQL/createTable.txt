@@ -1,0 +1,6 @@
+CREATE TABLE geek (
+    id 		numeric not null,
+    name 	varchar(50),
+    lastname 	varchar(50),
+    CONSTRAINT pk_geek PRIMARY KEY(id),
+);

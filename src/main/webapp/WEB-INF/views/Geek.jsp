@@ -8,7 +8,9 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<title>Geek</title>
 	</head>	
-	<body>		
-		<h2><c:out value="${geek.name}"/> <c:out value="${geek.lastname}"/></h2> 
+	<body>
+		<h1>Geek</h1> 	
+		<p><c:out value="${geek.name}"/> <c:out value="${geek.lastname}"/></p> 
+		<a href="../Geeks"> Retour à la liste des Geeks </a>
 	</body>
 </html>

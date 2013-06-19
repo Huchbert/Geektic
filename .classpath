@@ -2,6 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="src/main/java"/>
 	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry exported="true" kind="lib" path="F:/Iut/JEE/Geektic/caches/artifacts-23/filestore/org.springframework/spring-webmvc/3.2.2.RELEASE/jar/dd962b49d731a69c4ca0c4ec67b71076742657cc/spring-webmvc-3.2.2.RELEASE.jar" sourcepath="F:/Iut/JEE/Geektic/caches/artifacts-23/filestore/org.springframework/spring-webmvc/3.2.2.RELEASE/source/e304b61946aaef6929c1f96e0c2a01a93f6352a3/spring-webmvc-3.2.2.RELEASE-sources.jar">
@@ -29,12 +30,17 @@
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="F:/Iut/JEE/Geektic/caches/artifacts-23/filestore/org.hsqldb/hsqldb/2.2.9/jar/23365fb055315725a8e69777e3d2e1e8a5d4878f/hsqldb-2.2.9.jar" sourcepath="F:/Iut/JEE/Geektic/caches/artifacts-23/filestore/org.hsqldb/hsqldb/2.2.9/source/d268e3976cbb335252eebe5bf15016e70c7e9cb2/hsqldb-2.2.9-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="F:/Iut/JEE/Geektic/caches/artifacts-23/filestore/javax.servlet/javax.servlet-api/3.0.1/jar/6bf0ebb7efd993e222fc1112377b5e92a13b38dd/javax.servlet-api-3.0.1.jar" sourcepath="F:/Iut/JEE/Geektic/caches/artifacts-23/filestore/javax.servlet/javax.servlet-api/3.0.1/source/1952f91d84016a39e31346c9d18bd8c9c4a128a/javax.servlet-api-3.0.1-sources.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="F:/Iut/JEE/Geektic/caches/artifacts-23/filestore/org.hsqldb/hsqldb/2.2.9/jar/23365fb055315725a8e69777e3d2e1e8a5d4878f/hsqldb-2.2.9.jar" sourcepath="F:/Iut/JEE/Geektic/caches/artifacts-23/filestore/org.hsqldb/hsqldb/2.2.9/source/d268e3976cbb335252eebe5bf15016e70c7e9cb2/hsqldb-2.2.9-sources.jar">
+	<classpathentry exported="true" kind="lib" path="F:/Iut/JEE/Geektic/caches/artifacts-23/filestore/com.ninja-squad/DbSetup/1.0-RC1/jar/f566a43d1c565d053983d27990aa7e36e7e41574/DbSetup-1.0-RC1.jar" sourcepath="F:/Iut/JEE/Geektic/caches/artifacts-23/filestore/com.ninja-squad/DbSetup/1.0-RC1/source/6a357131e579e7650a951ba658d4fbafd752799/DbSetup-1.0-RC1-sources.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>

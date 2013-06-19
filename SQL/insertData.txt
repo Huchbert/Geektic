@@ -1,0 +1,4 @@
+INSERT INTO geek VALUES (1, 'Rosset', 'Melanie');
+INSERT INTO geek VALUES (2, 'Hubert', 'Florent');
+INSERT INTO geek VALUES (3, 'Landat', 'Frederic');
+INSERT INTO geek VALUES (4, 'Rabeson', 'Luc');

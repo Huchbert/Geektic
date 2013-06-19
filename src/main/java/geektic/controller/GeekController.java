@@ -1,6 +1,9 @@
-package controller;
+package geektic.controller;
 
 import java.util.List;
+
+import geektic.model.Geek;
+import geektic.service.GeekService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,9 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import service.GeekService;
-import model.Geek;
-
 @Controller
 @RequestMapping("/Geeks")
 public class GeekController {
@@ -19,11 +19,19 @@ public class GeekController {
 	@Autowired
 	private GeekService geekService;
 	
+	@RequestMapping(method = RequestMethod.GET)
+	public ModelAndView list() {
+		ModelAndView list = new ModelAndView("Geeks"); // Geek.jsp
+		List<Geek> spectacles = geekService.findAll();
+		list.addObject("geeks", spectacles);
+		return list; // Retourne le résultat dans la variable geeks de Geeks.jsp
+	}
+	
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	public ModelAndView getSpecatcle(@PathVariable("id") long id) {
-		ModelAndView list = new ModelAndView("Geek");
+		ModelAndView result = new ModelAndView("Geek"); // Geek.jsp
 		Geek geek = geekService.getGeekById(id);
-		list.addObject("geek", geek);
-		return list;
+		result.addObject("geek", geek); 
+		return result; // Retourne le résultat dans la variable geek de Geek.jsp
 	}
 }

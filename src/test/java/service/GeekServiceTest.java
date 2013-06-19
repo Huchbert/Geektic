@@ -1,13 +1,14 @@
 package service;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNull;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+import geektic.dao.GeekDAOInterface;
+import geektic.model.Geek;
+import geektic.service.GeekService;
 
 import org.junit.Test;
-import static org.mockito.Mockito.*;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import dao.GeekDAOInterface;
-import model.Geek;
 
 public class GeekServiceTest {
 	
