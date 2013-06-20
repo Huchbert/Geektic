@@ -21,10 +21,10 @@ public class GeekController {
 	
 	@RequestMapping(method = RequestMethod.GET)
 	public ModelAndView list() {
-		ModelAndView list = new ModelAndView("Geeks"); // Geek.jsp
-		List<Geek> spectacles = geekService.findAll();
-		list.addObject("geeks", spectacles);
-		return list; // Retourne le résultat dans la variable geeks de Geeks.jsp
+		ModelAndView result = new ModelAndView("Geeks"); // Geek.jsp
+		List<Geek> geeks = geekService.findAll();
+		result.addObject("geeks", geeks);
+		return result; // Retourne le résultat dans la variable geeks de Geeks.jsp
 	}
 	
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)

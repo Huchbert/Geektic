@@ -7,14 +7,16 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<title>Liste des Geeks</title>
+		<link rel="stylesheet" type="text/css" href="/Geektic/css/bootstrap.css"/>
 	</head>	
 	<body>		
 		<h1>Liste des Geeks</h1> 
 		<ul> 
 			<c:forEach var="geek" items="${geeks}"> 
 				<li> 
-					<a href="Geeks/${geek.id}"> 
-							<c:out value="${geek.name}"/> <c:out value="${geek.lastname}"/> 
+					<a href="/Geektic/Geeks/${geek.id}"> 
+						<c:out value="${geek.name}"/> 
+						<c:out value="${geek.lastname}"/> 
 					</a> 
 				</li> 
 			</c:forEach> 

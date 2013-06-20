@@ -1,0 +1,5 @@
+DROP TABLE geek_interest;
+
+DROP TABLE geek;
+
+DROP TABLE interest;

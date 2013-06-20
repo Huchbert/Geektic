@@ -7,10 +7,20 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<title>Geek</title>
+		<link rel="stylesheet" type="text/css" href="/Geektic/css/bootstrap.css"/>
 	</head>	
 	<body>
 		<h1>Geek</h1> 	
-		<p><c:out value="${geek.name}"/> <c:out value="${geek.lastname}"/></p> 
-		<a href="../Geeks"> Retour à la liste des Geeks </a>
+		<p>
+			<c:out value="${geek.name}"/> 
+			<c:out value="${geek.lastname}"/>
+			<c:out value="${geek.gender}"/>
+		</p> 
+		<ul>
+			<c:forEach var="interest" items="${geek.interests}"> 
+				<li>${interest.label}</li>
+			</c:forEach>
+		</ul>
+		<a href="/Geektic/Geeks"> Retour à la liste des Geeks </a>
 	</body>
 </html>

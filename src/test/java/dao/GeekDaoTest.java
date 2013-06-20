@@ -58,5 +58,12 @@ public class GeekDaoTest {
 			Geek geek = this.dao.getGeekById(1);
 			assertEquals("Rosset",geek.getName());
 			assertEquals("Melanie",geek.getLastname());
+			assertEquals("f",geek.getGender());
+		}
+		
+		@Test
+		public void GeekHasOneInterest() {
+			Geek geek = this.dao.getGeekById(1);
+			assertEquals("C#",geek.getInterests().get(0).getLabel());
 		}
 }

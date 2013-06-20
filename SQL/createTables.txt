@@ -1,0 +1,21 @@
+CREATE TABLE geek (
+    id_geek numeric not null,
+    name varchar(50),
+    lastname varchar(50),
+    gender char(1),
+    CONSTRAINT pk_geek PRIMARY KEY(id_geek)
+);
+
+CREATE TABLE interest (
+	id_interest numeric not null,
+	label varchar(50),
+	CONSTRAINT pk_interest PRIMARY KEY(id_interest)
+);
+
+CREATE TABLE geek_interest (
+	id_geek numeric not null,
+	id_interest numeric not null,
+	CONSTRAINT pk_geek_interest PRIMARY KEY(id_geek, id_interest),
+	CONSTRAINT fk_geek_interest_geek FOREIGN KEY(id_geek) REFERENCES geek(id_geek),
+	CONSTRAINT fk_geek_interest_interest FOREIGN KEY(id_interest) REFERENCES interest(id_interest)
+);
